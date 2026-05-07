@@ -1,0 +1,16 @@
+case_id,patient_type,activity,start_time,end_time,department,priority
+P0001,elderly,Registration,2026-01-01 08:00:00,2026-01-01 08:10:00,Front Desk,normal
+P0001,elderly,Triage,2026-01-01 08:25:00,2026-01-01 08:40:00,Emergency,normal
+P0001,elderly,Consultation,2026-01-01 09:20:00,2026-01-01 09:50:00,Clinic,normal
+P0001,elderly,Medication,2026-01-01 10:20:00,2026-01-01 10:35:00,Pharmacy,normal
+P0001,elderly,Discharge,2026-01-01 10:40:00,2026-01-01 10:50:00,Front Desk,normal
+P0002,adult,Registration,2026-01-01 08:05:00,2026-01-01 08:12:00,Front Desk,urgent
+P0002,adult,Triage,2026-01-01 08:15:00,2026-01-01 08:25:00,Emergency,urgent
+P0002,adult,Consultation,2026-01-01 08:30:00,2026-01-01 09:05:00,Clinic,urgent
+P0002,adult,Medication,2026-01-01 09:20:00,2026-01-01 09:35:00,Pharmacy,urgent
+P0002,adult,Discharge,2026-01-01 09:40:00,2026-01-01 09:50:00,Front Desk,urgent
+P0003,adult,Registration,2026-01-01 08:10:00,2026-01-01 08:18:00,Front Desk,normal
+P0003,adult,Triage,2026-01-01 08:50:00,2026-01-01 09:05:00,Emergency,normal
+P0003,adult,Consultation,2026-01-01 10:20:00,2026-01-01 10:50:00,Clinic,normal
+P0003,adult,Medication,2026-01-01 11:30:00,2026-01-01 11:50:00,Pharmacy,normal
+P0003,adult,Discharge,2026-01-01 12:00:00,2026-01-01 12:10:00,Front Desk,normal
