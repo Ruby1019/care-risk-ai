@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 import pandas as pd
 
 
@@ -115,7 +118,15 @@ def analyze_event_log(file_path: str):
 
 
 if __name__ == "__main__":
-    result = analyze_event_log("data/generated_event_log.csv")
+    input_path = "data/generated_event_log.csv"
+    output_path = Path("data/analysis_result.json")
+
+    result = analyze_event_log(input_path)
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(result, file, ensure_ascii=False, indent=4)
 
     print("=== CareRisk AI Analysis Result ===")
     print(f"Total cases: {result['total_cases']}")
@@ -123,6 +134,8 @@ if __name__ == "__main__":
     print(f"Average waiting time: {result['avg_waiting_time']} minutes")
     print(f"High-risk case count: {result['high_risk_case_count']}")
 
-    print("\n=== High Risk Cases ===")
-    for case in result["high_risk_cases"]:
+    print(f"\nAnalysis result saved to: {output_path}")
+
+    print("\n=== High Risk Cases Preview ===")
+    for case in result["high_risk_cases"][:10]:
         print(case)
