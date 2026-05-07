@@ -115,7 +115,7 @@ def analyze_event_log(file_path: str):
 
 
 if __name__ == "__main__":
-    result = analyze_event_log("data/sample_event_log.csv")
+    result = analyze_event_log("data/generated_event_log.csv")
 
     print("=== CareRisk AI Analysis Result ===")
     print(f"Total cases: {result['total_cases']}")
